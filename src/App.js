@@ -11,7 +11,7 @@ class App extends React.Component {
 
     let res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
     let resJson = await res.json()
-    this.setState({title: resJson})
+    this.setState({title: resJson.title})
 
 
   }
